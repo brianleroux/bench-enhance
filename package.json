@@ -1,0 +1,34 @@
+{
+  "name": "begin-app",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "begin dev",
+    "lint": "eslint ./app/**/*.mjs --fix"
+  },
+  "devDependencies": {
+    "@enhance/cli": "^1.0.3",
+    "@enhance/types": "^0.6.0",
+    "eslint": "^8.30.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+      "indent": [
+        "error",
+        2
+      ]
+    },
+    "ignorePatterns": [],
+    "parserOptions": {
+      "sourceType": "module",
+      "ecmaVersion": 2022
+    }
+  },
+  "dependencies": {
+    "@enhance/arc-plugin-enhance": "^6.1.1",
+    "@enhance/styles-cribsheet": "^0.0.8"
+  }
+}
